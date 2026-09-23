@@ -1,0 +1,42 @@
+body, h1, h2, h3 {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+    color: #134632;
+    font-weight: 50;
+}
+h2, h3{
+    color:  #0f3124;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.center-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.center-Heading {
+        text-align: center;
+        font-size: 80px;
+        color: rgb(0, 0, 0);
+}
+
+body {
+    position: relative;
+    background: none;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("../images/img_2.jpg") center / cover no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
