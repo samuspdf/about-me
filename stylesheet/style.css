@@ -6,8 +6,16 @@ h1 {
     color: #134632;
     font-weight: 50;
 }
-h2, h3{
-    color:  #0f3124;
+
+h2{
+    color:  #2a9ad6;
+    font-size: 40px;
+
+}
+
+h3{
+    color:  #1a5e83;
+    font-size: 20px;
 }
 
 body {
@@ -39,4 +47,18 @@ body::before {
     background: url("../images/img_2.jpg") center / cover no-repeat;
     opacity: 0.3;
     z-index: -1;
+}
+
+p {
+    font-size: 25px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+ul {
+    font-size: 25px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 20px;
 }
