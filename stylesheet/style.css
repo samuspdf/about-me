@@ -30,8 +30,35 @@ main > section {
     box-shadow: 0 8px 24px rgba(20, 45, 35, 0.12);
 }
 
-main > section > section {
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    padding: 8px 18px;
+    border-radius: 18px;
+    color: #1a5e83;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: rgba(42, 154, 214, 0.15);
+}
+
+.card-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
     margin-top: 24px;
+}
+
+.card-row > section {
+    flex: 1;
     padding: 20px 24px;
     border: 1px solid rgba(26, 94, 131, 0.18);
     border-radius: 18px;
@@ -49,7 +76,7 @@ main > section:hover {
     box-shadow: 0 14px 34px rgba(20, 45, 35, 0.2);
 }
 
-main > section > section:hover {
+.card-row > section:hover {
     transform: scale(1.03);
 }
 
@@ -81,7 +108,8 @@ h3 {
     color: #000000;
 }
 
-p {
+p,
+ul {
     font-size: 25px;
     line-height: 1.6;
     color: #000000;
@@ -99,7 +127,12 @@ p {
         border-radius: 20px;
     }
 
-    main > section > section {
+    .card-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card-row > section {
         padding: 16px;
     }
 
@@ -111,10 +144,4 @@ p {
     ul {
         font-size: 20px;
     }
-}
-ul {
-    font-size: 25px;
-    line-height: 1.6;
-    color: #000000;
-    margin-bottom: 20px;
 }
